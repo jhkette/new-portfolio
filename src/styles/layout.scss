@@ -1,0 +1,396 @@
+// scss variables //import masonry post styles
+@import "./variables.scss";
+@import "./masonrypost.scss";
+
+// /Users/joseph/Desktop/wordpress/blog/gatsby-responsive-nav-master/fonts
+// import fonts
+@font-face {
+  font-family: Inter;
+  src: url("./../../fonts/Inter-Medium.woff2") format("woff2"),
+    url("./../../fonts/Inter-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter-regular;
+  src: url("./../../fonts/Inter-Regular.woff2") format("woff2"),
+    url("./../../fonts/Inter-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter-italic;
+  src: url("./../../fonts/Inter-BoldItalic.woff2") format("woff2"),
+    url("./../../fonts/Inter-BoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+//
+/* browser resest */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+// display all html5 elements as blocks
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+html {
+  // set rem size
+  font-size: 112.5%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*:before {
+  box-sizing: inherit;
+}
+
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: normal;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter-regular", Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: $lightgrey;
+}
+////////////////////// * Typography styles * //////////////////////
+
+p {
+  padding: 0;
+  margin: 0 0 1.4rem 0;
+  font-weight: 500;
+  line-height: 1.55;
+  font-size: 1rem;
+  font-family: "Inter-regular", "Helvetica", "Arial", sans-serif;
+}
+
+li {
+  padding: 0;
+  margin: 0 0 1.4rem 0;
+  font-weight: 500;
+  line-height: 1.55;
+  font-size: 1rem;
+  font-family: "Inter-regular", "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  text-rendering: geometricPrecision;
+  margin: 3rem 0 0 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: $black;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  text-rendering: geometricPrecision;
+  color: $black;
+}
+
+h2 {
+  margin: 0.5rem 0 0.5rem 0;
+  color: $black;
+  display: block;
+  width: 100%;
+  font-size: 2.3rem;
+  padding-bottom: 0.05rem;
+}
+.heading-project {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: $black;
+}
+
+.lead-intro {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: $black;
+  margin: 0 1.5rem 3.5rem 1.5rem;
+  padding: 2rem;
+  background-color: $turqlight;
+  text-transform: none;
+  @media (min-width: $break-large) {
+    display: none;
+  }
+  @media (min-width: $break-tablet) {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+////////////////// End of typography  //////////////////
+
+// Main container elements on index //
+.wrapper {
+  position: relative;
+}
+
+footer {
+  height: 10rem;
+  width: 100%;
+  background-color: #ededed;
+  border-top: 1px solid #c0c0c0;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.container-projects-posts {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.container-projects-blogposts {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  article:nth-child(1) {
+    padding-right: 2rem;
+  }
+  article:nth-child(2) {
+    padding-left: 2rem;
+  }
+  @media (max-width: $break-smalldesktop) {
+    article:nth-child(1) {
+      padding: 0;
+    }
+    article:nth-child(2) {
+      padding: 0;
+    }
+  }
+}
+
+.container-projects-blogposts.blog {
+  min-height: 100vh;
+}
+
+header {
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    margin-right: auto;
+  }
+}
+
+.mainnav {
+  li {
+    display: block;
+
+    a {
+      text-decoration: none;
+      color: $black;
+
+      @media screen and (max-width: $break-small) {
+        display: none;
+        margin-right: auto;
+      }
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.mobileheader {
+  @media screen and (max-width: $break-small) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+header {
+  width: 15rem;
+}
+// Main container for all content
+.maincontent {
+  display: flex;
+  flex-direction: row;
+  background-color: $lightgrey;
+  justify-content: space-around;
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (max-width: $break-small) {
+    flex-direction: column;
+  }
+}
+
+// right container for main content
+.container-bodycontent {
+  counter-reset: section;
+  flex: 1;
+  margin: 2rem auto 0 auto;
+  padding: 0 2rem;
+  border: 1px red;
+  position: relative;
+
+  @media screen and (max-width: $break-tablet) {
+    flex: 0;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  @media (max-width: $break-large) {
+    margin-top: 5rem;
+  }
+}
+/****** for blog section and heading, also used on all posts page ***************/
+.container-section-post.index {
+  margin-top: 1.5rem;
+  @media (min-width: $break-large) {
+    margin-top: none;
+  }
+}
+
+.container-section-post {
+  padding: 0 1.5rem 6rem 1.5rem;
+}
+
+// Blog posts styling on index page
+.container-singlepost {
+  width: (100%/2);
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 4.5rem;
+
+  @media (max-width: $break-smalldesktop) {
+    width: 100%;
+  }
+}
