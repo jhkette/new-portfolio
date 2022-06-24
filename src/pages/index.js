@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Masonry from "react-masonry-component"
@@ -13,14 +13,14 @@ const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
 
   const toggleHover = () => {
-    setHover(true);
-  };
+    setHover(true)
+  }
 
   const turnHoverOff = () => {
-    setHover(false);
-  };
+    setHover(false)
+  }
 
-  const styles =  "#008489";
+  const styles = "#008489"
 
   const items = posts.map(post => {
     const title = post.frontmatter.title || post.fields.slug
@@ -28,23 +28,21 @@ const BlogIndex = ({ data, location }) => {
 
     console.log(post)
 
-    return (
-      <ProjectSnippet post={post} thumb={thumb} title={title} />
-    )
+    return <ProjectSnippet post={post} thumb={thumb} title={title} />
   })
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-   
+
       <div>
-      <Masonry
-        breakpointCols={1}
-        className="container-projects-posts"
-        columnClassName="my-masonry-grid_column"
-      >
-        {items}
-      </Masonry>
+        <Masonry
+          breakpointCols={1}
+          className="container-projects-posts"
+          columnClassName="my-masonry-grid_column"
+        >
+          {items}
+        </Masonry>
       </div>
     </Layout>
   )

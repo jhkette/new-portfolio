@@ -1,8 +1,10 @@
 ---
 title: Javascript Array Tool
-date: "2015-05-28T22:40:32.169Z"
+
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 thumb: reddit.jpeg
+code: React, Redux
+mainimage: readit.jpg
 ---
 
 I often get frustrated when searching through documentation trying to find the best javascript array method to use. To help, I built this javascript array tool, which, given an input, provides a relevant javascript array method to the user.

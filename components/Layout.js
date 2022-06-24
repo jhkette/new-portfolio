@@ -1,20 +1,20 @@
-import React, { PureComponent } from "react";
-import Toolbar from "./toolbar/Toolbar";
-import SideDrawer from "./SideDrawer/SideDrawer.js";
-import "../styles/layout.scss";
+import React, { PureComponent } from "react"
+import Toolbar from "./toolbar/Toolbar"
+import SideDrawer from "./SideDrawer/SideDrawer.js"
+import "../styles/layout.scss"
 
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet"
 
 class Layout extends PureComponent {
   state = {
-    sideDrawerOpen: false
-  };
+    sideDrawerOpen: false,
+  }
 
   drawerToggleClickHandler = () => {
     this.setState(prevState => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
-    });
-  };
+      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+    })
+  }
 
   render() {
     return (
@@ -35,8 +35,8 @@ class Layout extends PureComponent {
           <main className="container-bodycontent">{this.props.children}</main>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Layout;
+export default Layout

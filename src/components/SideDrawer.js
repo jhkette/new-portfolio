@@ -1,10 +1,10 @@
-import React from "react";
-import "../../styles/SideDrawer.scss";
-import { Link } from "gatsby";
+import React from "react"
+import "../../styles/SideDrawer.scss"
+import { Link } from "gatsby"
 const SideDrawer = props => {
-  let drawerClasses = "sidedrawer";
+  let drawerClasses = "sidedrawer"
   if (props.show) {
-    drawerClasses = "sidedrawer open";
+    drawerClasses = "sidedrawer open"
   }
 
   return (
@@ -32,7 +32,7 @@ const SideDrawer = props => {
         </li>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default SideDrawer;
+export default SideDrawer

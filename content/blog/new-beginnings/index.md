@@ -4,11 +4,12 @@ date: "2015-05-28T22:40:32.169Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 thumb: salty_egg.jpg
 code: "React, Typescript"
+mainimage: gradient2.png
 ---
 
 I wanted to improve my Typescript skills, particularly when working with React. I decided to make a Reddit clone using TypeORM and React with Typescript.
 
-TypeORM is an ORM  (ie a type of tool that maps entities with database tables) that can run in NodeJS. It is written in Typescript. I made the server side of the application using this tool and Node/Express. TypeORM allowed me to create entities, which essentially map a Typescript class onto a database table. Node/Express was used to create a server and routing for various API endpoints that would be used client-side.
+TypeORM is an ORM (ie a type of tool that maps entities with database tables) that can run in NodeJS. It is written in Typescript. I made the server side of the application using this tool and Node/Express. TypeORM allowed me to create entities, which essentially map a Typescript class onto a database table. Node/Express was used to create a server and routing for various API endpoints that would be used client-side.
 
 The React client was written in Typescript. I made use of a a library called SWR, a React Hooks library for data fetching. The library caches requests, ensuring the number of requests made to the server are kept to a minimum.
 

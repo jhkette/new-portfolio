@@ -1,9 +1,10 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
+import Arrow from "./../images/arrow.svg";
+import Img from "gatsby-image";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import "../styles/post.scss";
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -16,50 +17,35 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
-        <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
-        </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <section className="container-allpost-content" aria role="main">
+          <h2> {post.title}</h2>
+    
+            <div className="categoriespost"> {post.frontmatter.code}</div>
+          
+      
+           
+         
+            <div className="container-arrow-link">
+              <Arrow alt="arrow" className="arrow" />
+              <a
+                className="link-highlight"
+                title={post.title}
+                href={""}
+              >
+                {" "}
+                {"url"}
+              </a>
+            </div>
+        
+
+          <div
+            className="container text-content"
+            /* sanitize innerhtml */
+
+            dangerouslySetInnerHTML={{ __html: post.html }}
+        
+          />
+        </section>
     </Layout>
   )
 }
@@ -83,7 +69,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        code
         description
       }
     }
@@ -93,6 +79,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {

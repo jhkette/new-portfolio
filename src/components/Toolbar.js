@@ -1,14 +1,14 @@
-import React from "react";
-import DrawerToggleButton from "./DrawerToggle.js";
-import { Link } from "gatsby";
-import Github from "../../images/github.svg";
-import Codepen from "../../images/codepen.svg";
-import Arrow from "../../images/right-arrow-1.svg";
-import "./../styles/Toolbar.scss";
+import React from "react"
+import DrawerToggleButton from "./DrawerToggle.js"
+import { Link } from "gatsby"
+import Github from "../../images/github.svg"
+import Codepen from "../../images/codepen.svg"
+import Arrow from "../../images/right-arrow-1.svg"
+import "./../styles/Toolbar.scss"
 
 const activeStyle = {
-  color: "#008489"
-};
+  color: "#008489",
+}
 
 const Toolbar = props => (
   <header className="toolbar">
@@ -80,6 +80,6 @@ const Toolbar = props => (
       </nav>
     </div>
   </header>
-);
+)
 
-export default Toolbar;
+export default Toolbar

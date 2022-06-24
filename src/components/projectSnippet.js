@@ -1,21 +1,26 @@
-import React, { useState} from "react";
-import { Link } from "gatsby";
-import Img from "gatsby-image";
-// import Code from "./../../images/code.svg";
+import React, { useState } from "react"
+import { Link } from "gatsby"
+import Img from "gatsby-image"
+import Code from "./../images/code.svg"
 // import xss from "xss";
 
-const ProjectSnippet = ({post, thumb, title}) =>  {
+const ProjectSnippet = ({ post, thumb, title }) => {
   const [hover, setHover] = useState(false)
- 
+
   const toggleHover = () => {
-    setHover(true);
-  };
+    setHover(true)
+  }
 
   const turnHoverOff = () => {
-    setHover(false);
-  };
+    setHover(false)
+  }
 
-  const styles =  "#008489";
+  const splitCode = code => {
+    const mainCode = code.split(",")
+    return mainCode[0]
+  }
+
+  const styles = "#008489"
 
   return (
     <article
@@ -25,26 +30,26 @@ const ProjectSnippet = ({post, thumb, title}) =>  {
       itemType="http://schema.org/Article"
     >
       <header>
-      <Link
-        to={post.fields.slug} 
-        onMouseOut={turnHoverOff}
-        onMouseEnter={toggleHover}
-        onFocus={toggleHover}
-        onBlur={turnHoverOff}
-        className="masonry-item-link"
-      >
-        <div className="img-wrapper">
-        <p
-            className="maincode"
-            style={{
-              backgroundColor: hover ? styles : "",
-              opacity: hover ? 0.9 : 0
-            }}
-          >
-            {post.frontmatter.code}
-          </p>
-        <Img fluid={thumb}   className="image-bloglead"/>
-        </div>
+        <Link
+          to={post.fields.slug}
+          onMouseOut={turnHoverOff}
+          onMouseEnter={toggleHover}
+          onFocus={toggleHover}
+          onBlur={turnHoverOff}
+          className="masonry-item-link"
+        >
+          <div className="img-wrapper">
+            <p
+              className="maincode"
+              style={{
+                backgroundColor: hover ? styles : "",
+                opacity: hover ? 0.9 : 0,
+              }}
+            >
+              {splitCode(post.frontmatter.code)}
+            </p>
+            <Img fluid={thumb} className="image-bloglead" />
+          </div>
         </Link>
         <h3>
           <Link to={post.fields.slug} itemProp="url">
@@ -54,7 +59,7 @@ const ProjectSnippet = ({post, thumb, title}) =>  {
       </header>
       <section>
         <div className="container-codelist">
-          {/* <img src={Code} alt="code" className="code" /> */}
+          <Code alt="code" className="code" />
 
           <p className="highlight-categories">{post.frontmatter.code}</p>
         </div>
@@ -68,6 +73,5 @@ const ProjectSnippet = ({post, thumb, title}) =>  {
     </article>
   )
 }
-
 
 export default ProjectSnippet
