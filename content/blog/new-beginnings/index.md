@@ -2,9 +2,10 @@
 title: Reddit Clone
 date: "2015-05-28T22:40:32.169Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+
+code: React, Typescript
 thumb: salty_egg.jpg
-code: "React, Typescript"
-mainimage: gradient2.png
+main: salty_egg.jpg
 ---
 
 I wanted to improve my Typescript skills, particularly when working with React. I decided to make a Reddit clone using TypeORM and React with Typescript.
