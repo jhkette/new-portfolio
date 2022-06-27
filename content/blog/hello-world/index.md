@@ -1,8 +1,9 @@
 ---
 title: Hello World
 date: "2015-05-01T22:12:03.284Z"
-code: "Vue"
+code: Vue
 description: "Hello World"
+url: https://epic-bardeen-15eb55.netlify.app/
 thumb: salty_egg.jpg
 main: salty_egg.jpg
 ---

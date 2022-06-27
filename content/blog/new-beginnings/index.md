@@ -3,7 +3,7 @@ title: Reddit Clone
 date: "2015-05-28T22:40:32.169Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 
-code: "React, Typescript"
+code: React, Typescript
 thumb: salty_egg.jpg
 main: salty_egg.jpg
 ---

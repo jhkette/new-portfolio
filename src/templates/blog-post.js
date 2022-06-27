@@ -1,10 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import Arrow from "./../images/arrow.svg";
+import Arrow from "./../images/arrow.svg"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Img from "gatsby-image";
+import Img from "gatsby-image"
+import "../styles/post.scss"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -18,35 +19,32 @@ const BlogPostTemplate = ({ data, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <section className="container-allpost-content" aria role="main">
-          <h2> {post.title}</h2>
-          <Img fluid={post.frontmatter.main.childImageSharp.fluid}   className="image-bloglead"/>
-    
-            <div className="categoriespost"> {post.frontmatter.code}</div>
-          
-      
-           
-         
-            <div className="container-arrow-link">
-              <Arrow alt="arrow" className="arrow" />
-              <a
+        <h2> {post.frontmatter.title}</h2>
+        <div className="categoriespost"> {post.frontmatter.code}</div>
+        <Img
+          fluid={post.frontmatter.main.childImageSharp.fluid}
+          className="image-bloglead"
+        />
+
+        <div className="container-arrow-link">
+          <Arrow alt="arrow" className="arrow" />
+          <a
                 className="link-highlight"
-                title={post.title}
-                href={""}
+                title={post.frontmatter.title}
+                href={post.frontmatter.url}
               >
                 {" "}
-                {""}
+                {post.frontmatter.url}
               </a>
-            </div>
-        
+        </div>
 
-          <div
-            className="container text-content"
-            /* sanitize innerhtml */
+        <div
+          className="container text-content"
+          /* sanitize innerhtml */
 
-            dangerouslySetInnerHTML={{ __html: post.html }}
-        
-          />
-        </section>
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </section>
       <nav className="blog-post-nav">
         <ul
           style={{
@@ -97,7 +95,9 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        code
         description
+        url
         main {
           childImageSharp {
             fluid(maxWidth: 660) {

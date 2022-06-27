@@ -1,7 +1,8 @@
 ---
 title: Browser Code Editor
 date: React, Typescript
-code: "React"
+code: React
+url: https://epic-bardeen-15eb55.netlify.app/
 thumb: salty_egg.jpg
 main: salty_egg.jpg
 ---
