@@ -3,7 +3,7 @@ import "./../styles/DrawerToggleButton.scss"
 
 const drawerToggleButton = props => {
   let crossLines = "nav-icon1"
-  if (props.change) {
+  if (props.change.sideDrawerOpen) {
     crossLines = "nav-icon1 open"
   }
 

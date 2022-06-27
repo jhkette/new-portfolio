@@ -1,14 +1,16 @@
 import React from "react"
-import "../../styles/SideDrawer.scss"
+import "./../styles/SideDrawer.scss"
 import { Link } from "gatsby"
 const SideDrawer = props => {
+  console.log(props, "this is sidedrawerprops")
   let drawerClasses = "sidedrawer"
-  if (props.show) {
+  if (props.show.sideDrawerOpen) {
     drawerClasses = "sidedrawer open"
   }
 
   return (
     <nav className={drawerClasses}>
+      {/* {props.show} */}
       <ul>
         <li>
           <Link to="/" title="home">
