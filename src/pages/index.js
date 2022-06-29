@@ -57,7 +57,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: {frontmatter:{status: { eq: "project" }}}) {
       nodes {
         excerpt
         fields {
@@ -80,3 +80,64 @@ export const pageQuery = graphql`
     }
   }
 `
+
+
+
+
+
+
+
+
+// query {
+//   projects: allWordpressPost(
+//     filter: { acf: { status: { eq: "project" } } }
+//     limit: 6
+//   ) {
+//     edges {
+//       node {
+//         title
+//         excerpt
+//         slug
+//         categories {
+//           id
+//           slug
+//           name
+//           description
+//         }
+//         acf {
+//           test
+//         }
+//         featured_media {
+//           localFile {
+//             childImageSharp {
+//               fluid(maxWidth: 660) {
+//                 ...GatsbyImageSharpFluid
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   posts: allWordpressPost(
+//     filter: { acf: { status: { eq: "post" } } }
+//     limit: 2
+//   ) {
+//     edges {
+//       node {
+//         title
+//         excerpt
+//         slug
+//         categories {
+//           id
+//           slug
+//           name
+//           description
+//         }
+//         acf {
+//           test
+//         }
+//       }
+//     }
+//   }
+// }
