@@ -1,5 +1,6 @@
 ---
 title: Javascript Array Tool
+status: project
 code: React
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
 url: https://epic-bardeen-15eb55.netlify.app/

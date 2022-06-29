@@ -29,13 +29,13 @@ const BlogPostTemplate = ({ data, location }) => {
         <div className="container-arrow-link">
           <Arrow alt="arrow" className="arrow" />
           <a
-                className="link-highlight"
-                title={post.frontmatter.title}
-                href={post.frontmatter.url}
-              >
-                {" "}
-                {post.frontmatter.url}
-              </a>
+            className="link-highlight"
+            title={post.frontmatter.title}
+            href={post.frontmatter.url}
+          >
+            {" "}
+            {post.frontmatter.url}
+          </a>
         </div>
 
         <div
@@ -45,9 +45,7 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </section>
-      <nav className="blog-post-nav">
-       
-      </nav>
+      <nav className="blog-post-nav"></nav>
     </Layout>
   )
 }
@@ -55,10 +53,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String!
-
-  ) {
+  query BlogPostBySlug($id: String!) {
     site {
       siteMetadata {
         title
@@ -83,6 +78,5 @@ export const pageQuery = graphql`
         }
       }
     }
-
   }
 `

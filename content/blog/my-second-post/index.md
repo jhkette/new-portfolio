@@ -1,5 +1,6 @@
 ---
 title: Browser Code Editor
+status: project
 date: React, Typescript
 code: React
 url: https://epic-bardeen-15eb55.netlify.app/

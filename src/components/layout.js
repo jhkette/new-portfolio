@@ -5,8 +5,7 @@ import SideDrawer from "./SideDrawer.js";
 
 import Toolbar from "./Toolbar"
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+  
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
 
@@ -18,7 +17,7 @@ const Layout = ({ location, title, children }) => {
   };
 
   return (
-    <div className="wrapper" data-is-root-path={isRootPath}>
+    <div className="wrapper" >
       <SideDrawer show={sideDrawerOpen} />
       <div className="maincontent">
       

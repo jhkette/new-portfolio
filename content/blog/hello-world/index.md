@@ -1,5 +1,6 @@
 ---
 title: Hello World
+status: project
 date: "2015-05-01T22:12:03.284Z"
 code: Vue
 description: "Hello World"

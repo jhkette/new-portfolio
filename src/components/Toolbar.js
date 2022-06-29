@@ -60,7 +60,7 @@ const Toolbar = props => (
 
           <li>
             <img src={Arrow} alt="arrow" />
-            <Link to="/about/" activeStyle={activeStyle}>
+            <Link to="/about-me/" activeStyle={activeStyle}>
               About
             </Link>
           </li>
