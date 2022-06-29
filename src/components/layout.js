@@ -1,7 +1,6 @@
 import  React, {useState} from "react"
-import { Link } from "gatsby"
-import "./../styles/layout.scss"
 import SideDrawer from "./SideDrawer.js";
+import "./../styles/layout.scss"
 
 import Toolbar from "./Toolbar"
 const Layout = ({ location, title, children }) => {

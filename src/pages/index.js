@@ -1,16 +1,17 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Masonry from "react-masonry-component"
 import Img from "gatsby-image"
 import ProjectSnippet from "../components/projectSnippet"
+import BlogSnippet from "../components/BlogSnippet"
 const BlogIndex = ({ data, location }) => {
   const [hover, setHover] = useState(false)
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const posts = data.projects.nodes
+  const postsOther = data.posts.nodes
 
   const toggleHover = () => {
     setHover(true)
@@ -25,10 +26,12 @@ const BlogIndex = ({ data, location }) => {
   const items = posts.map(post => {
     const title = post.frontmatter.title || post.fields.slug
     const thumb = post.frontmatter.thumb.childImageSharp.fluid || ""
-
-    console.log(post)
-
     return <ProjectSnippet post={post} thumb={thumb} title={title} />
+  })
+
+  const itemsOther = postsOther.map(post => {
+    const title = post.frontmatter.title || post.fields.slug
+    return <BlogSnippet post={post} title={title} />
   })
 
   return (
@@ -43,6 +46,12 @@ const BlogIndex = ({ data, location }) => {
         >
           {items}
         </Masonry>
+        <section className="container-section-post index" aria>
+          <h2>Posts</h2>
+          <Masonry className="container-projects-blogposts">
+            {itemsOther}
+          </Masonry>
+        </section>
       </div>
     </Layout>
   )
@@ -51,13 +60,16 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } filter: {frontmatter:{status: { eq: "project" }}}) {
+    projects: allMarkdownRemark(
+      filter: { frontmatter: { status: { eq: "project" } } }
+      limit: 6
+    ) {
       nodes {
         excerpt
         fields {
@@ -78,66 +90,22 @@ export const pageQuery = graphql`
         }
       }
     }
+    posts: allMarkdownRemark(
+      filter: { frontmatter: { status: { eq: "post" } } }
+      limit: 2
+    ) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+          code
+        }
+      }
+    }
   }
 `
-
-
-
-
-
-
-
-
-// query {
-//   projects: allWordpressPost(
-//     filter: { acf: { status: { eq: "project" } } }
-//     limit: 6
-//   ) {
-//     edges {
-//       node {
-//         title
-//         excerpt
-//         slug
-//         categories {
-//           id
-//           slug
-//           name
-//           description
-//         }
-//         acf {
-//           test
-//         }
-//         featured_media {
-//           localFile {
-//             childImageSharp {
-//               fluid(maxWidth: 660) {
-//                 ...GatsbyImageSharpFluid
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-//   posts: allWordpressPost(
-//     filter: { acf: { status: { eq: "post" } } }
-//     limit: 2
-//   ) {
-//     edges {
-//       node {
-//         title
-//         excerpt
-//         slug
-//         categories {
-//           id
-//           slug
-//           name
-//           description
-//         }
-//         acf {
-//           test
-//         }
-//       }
-//     }
-//   }
-// }
