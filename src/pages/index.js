@@ -28,7 +28,11 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
 
-      <div>
+    
+      <h1 className="lead-intro">
+          I am a junior web developer with experience with HTML, CSS,
+          Javascript, React, PHP, Python and MySQL.
+        </h1>
         <Masonry
           breakpointCols={1}
           className="container-projects-posts"
@@ -42,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
             {itemsOther}
           </Masonry>
         </section>
-      </div>
+     
     </Layout>
   )
 }

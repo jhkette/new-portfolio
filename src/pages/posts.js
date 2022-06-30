@@ -1,19 +1,20 @@
-import React, { useState } from "react"
-import {  graphql } from "gatsby"
+import React from "react"
+import { graphql } from "gatsby"
+
 import Layout from "../components/layout"
-import Seo from "./../components/seo"
+import Seo from "../components/seo"
 import Masonry from "react-masonry-component"
-import BlogSnippet from "./../components/BlogSnippet"
+import ProjectSnippet from "../components/projectSnippet"
 
 const BlogIndex = ({ data, location }) => {
- 
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-
   const items = posts.map(post => {
     const title = post.frontmatter.title || post.fields.slug
-    return <BlogSnippet post={post} title={title} />
+    const thumb = post.frontmatter.thumb.childImageSharp.fluid || ""
+
+    return <ProjectSnippet post={post} thumb={thumb} title={title} />
   })
 
   return (
@@ -44,8 +45,8 @@ export const pageQuery = graphql`
     }
 
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { status: { eq: "post" } } }
+      sort: { fields: [frontmatter___appearence], order: ASC }
+      filter: { frontmatter: { status: { eq: "project" } } }
     ) {
       nodes {
         excerpt
@@ -56,7 +57,15 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          appearence
           code
+          thumb {
+            childImageSharp {
+              fluid(maxWidth: 560) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

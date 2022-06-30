@@ -1,7 +1,7 @@
 ---
 title: HTML emailer
 status: project
-appearence: 4
+appearence: 6
 code: HTML emailer
 url: https://emailerdemo.netlify.com/
 thumb: emailerthumb.png

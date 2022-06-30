@@ -1,7 +1,7 @@
 ---
 title: Reddit clone
 status: project
-appearence: 6
+appearence: 4
 code: React
 description: I wanted to improve my Typescript skills, particularly when working with React. I decided to make a Reddit clone using TypeORM and React with Typescript.
 
