@@ -1,15 +1,13 @@
 ---
-title: Javascript Array Tool
+title: CSS Gradient Tool
 status: project
-code: React
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
+date: "2015-05-28T22:40:32.169Z"
+code: "Vue, Vuex"
 url: https://epic-bardeen-15eb55.netlify.app/
-thumb: reddit.jpeg
-main: code.jpg
+thumb: gradient.png
+main: gradient2.png
 ---
 
-I often get frustrated when searching through documentation trying to find the best javascript array method to use. To help, I built this javascript array tool, which, given an input, provides a relevant javascript array method to the user.
+This is a CSS gradient generator made in Vue.
 
-The site is made in React and uses Redux to store global state. I also made a ‘Typewriter’ animated component, as I wasn’t satisfied with any react animation libraries I could find. The component takes some text as props then ‘types’ it out on screen. The component also has a delete animation, as though a user is pressing backspace, when the props change. This component is used to show some example code when the user has selected an array method.
-
-This site was inspired by another site I saw which was made using Vue. I liked the idea and wanted see if I could make a comparable site using React.
+It allows the user to generate a simple CSS gradient from two colour palettes. The CSS for the gradient can be copied to the user’s clipboard.

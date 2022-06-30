@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Code from "./../images/code.svg"
-// import xss from "xss";
+
 
 const ProjectSnippet = ({ post, thumb, title }) => {
   const [hover, setHover] = useState(false)

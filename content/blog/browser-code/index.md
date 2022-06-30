@@ -1,11 +1,11 @@
 ---
 title: Browser Code Editor
 status: project
-date: React, Typescript
-code: React
+date: "2015-05-28T22:40:32.169Z"
+code: React, Typescript
 url: https://epic-bardeen-15eb55.netlify.app/
-thumb: salty_egg.jpg
-main: salty_egg.jpg
+thumb: code1.jpeg
+main: code.jpg
 ---
 
 This is an online code editor built using Typescript with React. It was based on a short tutorial on how to use esbuild to create an online code editor. I expanded on this considerably to make an application written in Typescript with React. Redux is used to store state in the application.

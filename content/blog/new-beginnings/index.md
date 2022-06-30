@@ -3,10 +3,10 @@ title: Reddit Clone
 status: project
 date: "2015-05-28T22:40:32.169Z"
 description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
-
-code: React, Typescript
+url: https://emailerdemo.netlify.com/
+code: HTML,CSS
 thumb: salty_egg.jpg
-main: salty_egg.jpg
+main: emailer.png
 ---
 
 I wanted to improve my Typescript skills, particularly when working with React. I decided to make a Reddit clone using TypeORM and React with Typescript.

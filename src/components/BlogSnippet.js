@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import xss from "xss"
+
 import { Link } from "gatsby"
 const BlogSnippet = ({ post, title }) => {
   console.log(post)

@@ -5,14 +5,14 @@
 // they style the posts snippets that appear on the home page and all prject page
 .masonry-item-post {
   position: relative;
-  width: (100% / 3);
+  width: calc(100% / 3);
   text-align: left;
   margin-bottom: 1.5rem;
   padding: 0 1.5rem 3.5rem 1.5rem;
   display: inline-block;
 
   @media screen and (max-width: $break-smalldesktop) {
-    width: (100% / 2);
+    width: calc(100% / 2);
   }
 
   @media screen and (max-width: $break-large) {
