@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "./../components/layout"
+import Seo from "./../components/seo"
 import Masonry from "react-masonry-component"
 import Img from "gatsby-image"
 import BlogSnippet from "./../components/BlogSnippet"
