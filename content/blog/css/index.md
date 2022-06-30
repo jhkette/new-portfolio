@@ -1,7 +1,7 @@
 ---
 title: CSS Gradient Tool
 status: project
-date: "2015-05-28T22:40:32.169Z"
+appearence: 3
 code: "Vue, Vuex"
 url: https://epic-bardeen-15eb55.netlify.app/
 thumb: gradient.png

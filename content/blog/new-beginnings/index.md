@@ -1,20 +1,19 @@
 ---
-title: Reddit Clone
+title: Testing framework
 status: project
-date: "2015-05-28T22:40:32.169Z"
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
-url: https://emailerdemo.netlify.com/
-code: HTML,CSS
-thumb: salty_egg.jpg
-main: emailer.png
+date: "2015-11-28T22:40:32.169Z"
+appearence: 6
+description: This is a simple Javascript testing framework running on Node.js. I’ve tried to make a simpler version of Mocha.js, after reading a detailed article on how Mocha.js worked.
+url: https://github.com/jhkette/algorithms-data-structures-testing
+code: Node.js
+thumb: pencils.jpeg
+main: testing.jpeg
 ---
 
-I wanted to improve my Typescript skills, particularly when working with React. I decided to make a Reddit clone using TypeORM and React with Typescript.
+This is a simple Javascript testing framework running on Node.js. I’ve tried to make a simpler version of Mocha.js, after reading a detailed article on how Mocha.js worked.
 
-TypeORM is an ORM (ie a type of tool that maps entities with database tables) that can run in NodeJS. It is written in Typescript. I made the server side of the application using this tool and Node/Express. TypeORM allowed me to create entities, which essentially map a Typescript class onto a database table. Node/Express was used to create a server and routing for various API endpoints that would be used client-side.
+I’ve added a ‘beforeeach’ hook, which allows a function to run before a test is executed. I’ve also added a ‘render’ function – this allows tests to be run on Javascript which interacts with the DOM. I’ve used the JSDOM library to load the DOM (ie a html file in the documents being tested) then test the Javascript that interacts with it. Finally, I’ve added an ‘it’ function, similar to the ‘it’ function in Mocha.js. This runs a function and tests it agasint an expected value from a given input.
 
-The React client was written in Typescript. I made use of a a library called SWR, a React Hooks library for data fetching. The library caches requests, ensuring the number of requests made to the server are kept to a minimum.
+In addition i’ve used Chalk to ‘colour’ the console logs for each test.
 
-I was pleased with the end result. In all the clone has authentication, subs can be created, posts can be written and comments can be written on posts. Posts are associated with certain subs, in a one to many relationship. In addition, posts can also be voted on and the cumulative number of votes by all users are shown.
-
-I deployed the site on AWS. As it’s simply a clone – I haven’t applied for a domain name or an HTTPS certificate.
+The sub folders in the repo are all various common Javascript problems/ algorithms (such as binary search, ‘the most common element in an array’ etc). I use the testing framework as a handy way to get instant feedback on common Javascript problems.

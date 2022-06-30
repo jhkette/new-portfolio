@@ -25,8 +25,8 @@ module.exports = {
       options: {
         rule: {
           include: `${__dirname}/src/images`,
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -40,8 +40,8 @@ module.exports = {
       options: {
         rule: {
           include: `${__dirname}/src/images`,
-        }
-      }
+        },
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,

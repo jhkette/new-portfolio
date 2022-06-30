@@ -1,27 +1,26 @@
-import  React, {useState} from "react"
-import SideDrawer from "./SideDrawer.js";
+import React, { useState } from "react"
+import SideDrawer from "./SideDrawer.js"
 import "./../styles/layout.scss"
 
 import Toolbar from "./Toolbar"
 const Layout = ({ location, title, children }) => {
-  
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
-
 
   const drawerToggleClickHandler = () => {
     setSideDrawerOpen(prevState => {
       console.log(prevState.sideDrawerOpen, "this is prevstate")
-      return { sideDrawerOpen: !prevState.sideDrawerOpen };
-    });
-  };
+      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+    })
+  }
 
   return (
-    <div className="wrapper" >
+    <div className="wrapper">
       <SideDrawer show={sideDrawerOpen} />
       <div className="maincontent">
-      
-        <Toolbar  drawerClickHandler={drawerToggleClickHandler}
-            change={sideDrawerOpen}/>
+        <Toolbar
+          drawerClickHandler={drawerToggleClickHandler}
+          change={sideDrawerOpen}
+        />
         <main className="container-bodycontent">{children}</main>
       </div>
       <footer></footer>

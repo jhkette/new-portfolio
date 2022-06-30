@@ -1,26 +1,14 @@
-import React, { useState } from "react"
-import { Link, graphql } from "gatsby"
+import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Masonry from "react-masonry-component"
-import Img from "gatsby-image"
 import ProjectSnippet from "../components/projectSnippet"
 
 const BlogIndex = ({ data, location }) => {
-  const [hover, setHover] = useState(false)
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-
-  const toggleHover = () => {
-    setHover(true)
-  }
-
-  const turnHoverOff = () => {
-    setHover(false)
-  }
-
-  const styles = "#008489"
 
   const items = posts.map(post => {
     const title = post.frontmatter.title || post.fields.slug
@@ -57,7 +45,7 @@ export const pageQuery = graphql`
     }
 
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___appearence], order: ASC }
       filter: { frontmatter: { status: { eq: "project" } } }
     ) {
       nodes {
@@ -69,6 +57,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          appearence
           code
           thumb {
             childImageSharp {
