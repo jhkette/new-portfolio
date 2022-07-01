@@ -1,5 +1,5 @@
 ---
-title: Image Upload
+title: Image classifier
 status: project
 appearence: 16
 code: React

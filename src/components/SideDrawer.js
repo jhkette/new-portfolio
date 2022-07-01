@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import "./../styles/SideDrawer.scss"
 
 const SideDrawer = props => {
-  console.log(props, "this is sidedrawerprops")
+ 
   let drawerClasses = "sidedrawer"
   if (props.show.sideDrawerOpen) {
     drawerClasses = "sidedrawer open"

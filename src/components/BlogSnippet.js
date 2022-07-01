@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import { Link } from "gatsby"
 const BlogSnippet = ({ post, title }) => {
-  console.log(post)
+  
   return (
     <article key={post.fields.slug} className="container-singlepost">
       <Link to={`${post.fields.slug}`} style={{ textDecoration: "none" }}>
