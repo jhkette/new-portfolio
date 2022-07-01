@@ -214,13 +214,17 @@ h4 {
 h2 {
   margin: 0.5rem 0 0.5rem 0;
   color: $black;
-  display: inline-block;
-  margin-left: 1.5rem;
+ 
   // width: 100%;
   font-size: 2.4rem;
   padding-bottom: 0.05rem;
 
 }
+
+.subpage-heading{
+  margin-left: 1.5rem;
+}
+
 .heading-project {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
@@ -277,6 +281,7 @@ footer {
   display: flex;
   text-align: center;
   margin-top: 1rem;
+ 
 }
 
 .container-projects-blogposts {
@@ -357,7 +362,7 @@ header {
 
 // right container for main content
 .container-bodycontent {
-  counter-reset: section;
+  
   flex: 1;
   margin: 2rem auto 0 auto;
   padding: 0 2rem;
