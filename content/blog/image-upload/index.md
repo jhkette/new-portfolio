@@ -1,5 +1,5 @@
 ---
-title: Image Classifier
+title: Image upload
 status: project
 appearence: 15
 code: React, ml5.js

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Layout from "../components/layout"
 
 import "../styles/404.scss"
@@ -9,9 +9,10 @@ export default function about() {
     <Layout>
       <title>Portfolio: Joseph Ketterer</title>
 
-      <div className="not-found">
-        <h1 className="heading-warning">About</h1>
-        <p>About</p>
+      <div>
+        <h2>About</h2>
+        <p>I am a junior web developer with experience with HTML, CSS,
+          Javascript, React, PHP, Python and MySQL.</p>
       </div>
     </Layout>
   )
