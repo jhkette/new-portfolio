@@ -21,6 +21,7 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="All posts" />
 
       <div>
+        <h2>All Posts</h2>
         <Masonry
           breakpointCols={1}
           className="container-projects-posts"

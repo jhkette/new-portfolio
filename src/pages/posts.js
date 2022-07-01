@@ -20,7 +20,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-
+      <h2>All Projects</h2>
       <div>
         <Masonry
           breakpointCols={1}
