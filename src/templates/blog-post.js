@@ -20,11 +20,11 @@ const BlogPostTemplate = ({ data, location }) => {
       />
       <section className="container-allpost-content" aria role="main">
         <h2> {post.frontmatter.title}</h2>
-        <div className="categoriespost"> {post.frontmatter.code}</div>
-        <Img
+        {post.frontmatter.status =="project" ?  <div className="categoriespost"> {post.frontmatter.code}</div> :""}
+        {post.frontmatter.status =="project" ?   <Img
           fluid={post.frontmatter.main.childImageSharp.fluid}
           className="image-bloglead"
-        />
+        /> :""}
 
         <div className="container-arrow-link">
           <Arrow alt="arrow" className="arrow" />
@@ -69,6 +69,7 @@ export const pageQuery = graphql`
         code
         description
         url
+        status
         main {
           childImageSharp {
             fluid(maxWidth: 660) {

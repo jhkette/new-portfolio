@@ -8,6 +8,12 @@ thumb: wordle.webp
 main: wordleheader.jpeg
 ---
 
-This is an online code editor built using Typescript with React. It was based on a short tutorial on how to use esbuild to create an online code editor. I expanded on this considerably to make an application written in Typescript with React. Redux is used to store state in the application.
+This is a wordle clone made in React. All the features of the wordle game are present:
 
-It was a fun project with some obvious challenges. I learnt how to execute javascript code (securely) in a browser using an iframe. ‘Messages’ can be posted from the code editor to the Iframe; the Iframe itself has an event listener to ‘listen’ for the messages. The javascript communicated in the message then runs securely and independently in the Iframe window.
+- Letter in the correct position of the correct word are marked green.
+- Letters that are present in the correct word but not in the correct place are marked yellow.
+- If there are more versions of the letter in the guessed word than the correct word only one letter will 
+appear in yellow.
+- If the guessed word in not valid an error message is shown.
+- If the guesses are completed or the correct word is guessed a modal is shown.
+

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Code from "./../images/code.svg"
 
-const ProjectSnippet = ({ post, thumb, title }) => {
+const ProjectSnippet = ({ post, thumb, title, status }) => {
   const [hover, setHover] = useState(false)
 
   const toggleHover = () => {

@@ -27,26 +27,21 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-
-    
       <h1 className="lead-intro">
-          I am a junior web developer with experience with HTML, CSS,
-          Javascript, React, PHP, Python and MySQL.
-        </h1>
-        <Masonry
-          breakpointCols={1}
-          className="container-projects-posts"
-          columnClassName="my-masonry-grid_column"
-        >
-          {items}
-        </Masonry>
-        <section className="container-section-post index" aria>
-          <h2>Posts</h2>
-          <Masonry className="container-projects-blogposts">
-            {itemsOther}
-          </Masonry>
-        </section>
-     
+        I am a junior web developer with experience with HTML, CSS, Javascript,
+        React, PHP, Python and MySQL.
+      </h1>
+      <Masonry
+        breakpointCols={1}
+        className="container-projects-posts"
+        columnClassName="my-masonry-grid_column"
+      >
+        {items}
+      </Masonry>
+      <section className="container-section-post index" aria>
+        <h2>Posts</h2>
+        <Masonry className="container-projects-blogposts">{itemsOther}</Masonry>
+      </section>
     </Layout>
   )
 }
