@@ -1,10 +1,9 @@
 ---
-title: Post test
+title: Gatsby Portfolio
 status: post
 appearence: 10
-description: This is a custom description for SEO and Open Graph purposes, rather than the default generated excerpt. Simply add a description field to the frontmatter.
-url: https://epic-bardeen-15eb55.netlify.app/
-main: map.png
+description: Explaining why I used gatsby to create a portfolio
+url: https://jketterer.netlify.app/
 ---
 
 This is a responsive emailer that works across all major email clients. As in all emailers, I use HTML tables to control the layout.
