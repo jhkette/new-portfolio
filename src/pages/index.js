@@ -24,6 +24,10 @@ const BlogIndex = ({ data, location }) => {
     return <BlogSnippet post={post} title={title} />
   })
 
+  if(!items){
+    return <p>Loading....</p>
+  }
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
