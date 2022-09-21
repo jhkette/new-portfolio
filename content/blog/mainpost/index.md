@@ -1,8 +1,8 @@
 ---
-title: Gatsby Portfolio
+title: React accessibility testing
 status: post
 appearence: 10
-description: Explaining why I used gatsby to create a portfolio
+description: React accessibility testing
 url: https://jketterer.netlify.app/
 ---
 

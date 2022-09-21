@@ -8,7 +8,7 @@ const Layout = ({ location, title, children }) => {
 
   const drawerToggleClickHandler = () => {
     setSideDrawerOpen(prevState => {
-      console.log(prevState.sideDrawerOpen, "this is prevstate")
+     
       return { sideDrawerOpen: !prevState.sideDrawerOpen }
     })
   }
@@ -21,7 +21,7 @@ const Layout = ({ location, title, children }) => {
           drawerClickHandler={drawerToggleClickHandler}
           change={sideDrawerOpen}
         />
-        <main className="container-bodycontent">{children}</main>
+       { children && <main className="container-bodycontent">{children}</main> }
       </div>
       <footer></footer>
     </div>
