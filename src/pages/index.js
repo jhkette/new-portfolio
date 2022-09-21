@@ -38,7 +38,7 @@ const BlogIndex = ({ data, location }) => {
       <Masonry
         breakpointCols={1}
         className="container-projects-posts"
-        columnClassName="my-masonry-grid_column"
+     
       >
         {items}
       </Masonry>

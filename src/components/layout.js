@@ -1,8 +1,9 @@
 import React, { useState } from "react"
+import Toolbar from "./Toolbar"
 import SideDrawer from "./SideDrawer.js"
 import "./../styles/layout.scss"
 
-import Toolbar from "./Toolbar"
+
 const Layout = ({ location, title, children }) => {
   const [sideDrawerOpen, setSideDrawerOpen] = useState(false)
 
