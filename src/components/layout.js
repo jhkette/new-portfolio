@@ -33,7 +33,7 @@ const Layout = ({ location, title, children }) => {
           change={sideDrawerOpen}
           ref={mounted}
         />
-       { mounted && <main className="container-bodycontent">{children}</main> }
+       {mounted ? <main className="container-bodycontent">{children}</main> : ""}
       </div>
       <footer></footer>
     </div>
