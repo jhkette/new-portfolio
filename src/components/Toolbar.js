@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import DrawerToggleButton from "./DrawerToggle.js"
 import { Link } from "gatsby"
 import Github from "../../images/github.svg"
@@ -10,7 +10,11 @@ const activeStyle = {
   color: "#008489",
 }
 
-const Toolbar = props => (
+const Toolbar = props => {
+ 
+
+  return (
+
   <header className="toolbar">
     <div className="toolbar__navigation">
       <div className="heading">
@@ -80,6 +84,6 @@ const Toolbar = props => (
       </nav>
     </div>
   </header>
-)
-
+  )
+}
 export default Toolbar

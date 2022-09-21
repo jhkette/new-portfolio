@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useRef } from "react"
 import Toolbar from "./Toolbar"
 import SideDrawer from "./SideDrawer.js"
 import "./../styles/layout.scss"
@@ -14,6 +14,16 @@ const Layout = ({ location, title, children }) => {
     })
   }
 
+  const mounted = useRef(false)
+
+  useEffect(() => {
+    mounted.current = true
+
+    return () => {
+      mounted.current = false
+    }
+  }, []);
+
   return (
     <div className="wrapper">
       <SideDrawer show={sideDrawerOpen} />
@@ -21,8 +31,9 @@ const Layout = ({ location, title, children }) => {
         <Toolbar
           drawerClickHandler={drawerToggleClickHandler}
           change={sideDrawerOpen}
+          ref={mounted}
         />
-       { children && <main className="container-bodycontent">{children}</main> }
+       { mounted && <main className="container-bodycontent">{children}</main> }
       </div>
       <footer></footer>
     </div>
