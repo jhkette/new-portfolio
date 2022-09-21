@@ -14,16 +14,8 @@ const Layout = ({ location, title, children }) => {
     })
   }
 
-  const mounted = useRef(false)
-
-  useEffect(() => {
-    mounted.current = true
-
-    return () => {
-      mounted.current = false
-    }
-  }, []);
-
+  
+  
   return (
     <div className="wrapper">
       <SideDrawer show={sideDrawerOpen} />
@@ -31,9 +23,9 @@ const Layout = ({ location, title, children }) => {
         <Toolbar
           drawerClickHandler={drawerToggleClickHandler}
           change={sideDrawerOpen}
-          ref={mounted}
+       
         />
-       {mounted ? <main className="container-bodycontent">{children}</main> : ""}
+   <main className="container-bodycontent">{children}</main>
       </div>
       <footer></footer>
     </div>
