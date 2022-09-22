@@ -5,7 +5,7 @@ appearence: 1
 code: React
 url: https://worldleclone.netlify.app/
 thumb: wordle.webp
-main: Wordle.png
+main: words.jpg
 ---
 
 This is a wordle clone made in React. All the features of the wordle game are present. 
