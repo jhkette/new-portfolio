@@ -343,7 +343,9 @@ header {
   }
 }
 
-
+header {
+  width: fit-content;
+}
 // Main container for all content
 .maincontent {
   display: flex;
