@@ -344,7 +344,7 @@ header {
 }
 
 header {
-  width: fit-content;
+  min-width: 12rem;
 }
 // Main container for all content
 .maincontent {
