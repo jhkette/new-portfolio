@@ -309,6 +309,8 @@ footer {
 }
 
 header {
+  max-width:100%;
+max-height:100%;
   @media screen and (max-width: $break-small) {
     width: 100%;
     margin-right: auto;
@@ -343,9 +345,7 @@ header {
   }
 }
 
-header {
-  min-width: 12rem;
-}
+
 // Main container for all content
 .maincontent {
   display: flex;
