@@ -28,7 +28,7 @@ const ProjectSnippet = ({ post, thumb, title, status }) => {
       itemScope
       itemType="http://schema.org/Article"
     >
-      <header>
+      <header className="blog-header">
         <Link
           to={post.fields.slug}
           onMouseOut={turnHoverOff}
