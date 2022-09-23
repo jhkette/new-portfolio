@@ -116,7 +116,7 @@
 }
 
 .blog-header {
- 
+ min-width: 250px;
  display: block;
  
   @media screen and (max-width: $break-small) {
