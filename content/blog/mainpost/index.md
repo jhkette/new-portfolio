@@ -3,13 +3,8 @@ title: React accessibility testing
 status: post
 appearence: 10
 description: React accessibility testing
-url: https://jketterer.netlify.app/
+url: https://github.com/jhkette/autmated-accesibility-1
 ---
 
-This is a responsive emailer that works across all major email clients. As in all emailers, I use HTML tables to control the layout.
 
-Most emailers will need to have a section that has two or three columns. The most effective way to make these sections responsive is to create a container table then add nested tables inside a 100% width <td> cell of the parent table.
-
-For example each nested table would have a width of 280px for a ‘two column’ emailer layout. Media queries can then be used to make the nested table 100% width for tablets or mobile devices. This makes the tables stack ontop of one another, creating an effective responsive design.
-
-This wireframe sketch shows how I laid out the email above.
+Here are some useful repos of react app that use various automated tools to provide an automated report on how accessible the application is. The repo uses jsx-a11y that lints the code and highlights possible accessibility errors. I also wrote tests using Jest Axe, that tested the code for accessibility errors. Finally cypress lighthouse, to test the code when rendered in a browser. This can test for accessibility errors that are not visible in the code, ie. poor visual contrast between text and background. 
