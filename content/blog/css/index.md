@@ -3,7 +3,7 @@ title: CSS Gradient Tool
 status: project
 appearence: 3
 code: "Vue, Vuex"
-url: https://epic-bardeen-15eb55.netlify.app/
+url: https://css-gradient.netlify.app/
 thumb: gradient.png
 main: gradient2.png
 ---
