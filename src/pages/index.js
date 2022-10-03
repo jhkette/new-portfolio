@@ -30,7 +30,7 @@ const BlogIndex = ({ data, location}) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
+      <Seo title="Joseph Ketterer: Home" />
       <h1 className="lead-intro">
         I am a junior web developer with experience with HTML, CSS, Javascript,
         React, PHP, Python and MySQL.

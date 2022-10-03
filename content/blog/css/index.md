@@ -1,5 +1,5 @@
 ---
-title: Javascript Array Tool
+title: CSS gradient tool
 status: project
 appearence: 4
 code: "React"
