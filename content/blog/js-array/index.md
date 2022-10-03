@@ -4,7 +4,7 @@ status: project
 appearence: 2
 code: React
 url: https://epic-bardeen-15eb55.netlify.app/
-thumb: array2.png
+thumb: map.png
 main: array.jpg
 ---
 
