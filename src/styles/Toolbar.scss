@@ -144,14 +144,7 @@ a:focus {
   }
 }
 
-.nav-icons ul {
-  list-style: none;
-  margin: 1rem 0 1.25rem 0;
-  li {
-    display: inline-block;
-    padding-right: 0.7rem;
-  }
-}
+
 
 @media (min-width: $break-large) {
   .toolbar__toggle-button {
@@ -222,4 +215,8 @@ a:focus {
   @media screen and (max-width: $break-large) {
     display: none;
   }
+}
+
+.spacer {
+  height: 1rem;
 }
