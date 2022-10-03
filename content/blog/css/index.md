@@ -1,9 +1,9 @@
 ---
-title: CSS Gradient Tool
+title: Javascript Array Tool
 status: project
-appearence: 3
-code: "Vue, Vuex"
-url: https://css-gradient.netlify.app/
+appearence: 4
+code: "React"
+url: https://js-array-methods.netlify.app/
 thumb: gradient.png
 main: gradient2.png
 ---

@@ -37,22 +37,7 @@ const Toolbar = props => {
         </nav>
       </div>
       <div className="spacer" />
-      <nav className="nav-icons" aria role="navigation">
-        <ul>
-          <li>
-            <a href="https://github.com/jhkette" title="github">
-              <img className="iconl github" alt="Github" src={Github} />
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codepen.io/jokhenry89/" title="codepen">
-              <img className="iconl codepen" alt="Codepen" src={Codepen} />
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div className="spacer" />
+    
       <nav className="toolbar_navigation-items" aria role="navigation">
         <ul>
           <li>
