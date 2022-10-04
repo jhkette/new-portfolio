@@ -68,7 +68,7 @@
   align-items: flex-start;
   align-content: center;
   flex-direction: row;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   width: 100%;
   flex-direction: column;
   height: auto;
@@ -202,6 +202,7 @@ a:focus {
 }
 
 .text-introduction {
+  font-size: 1.05rem;
   @media screen and (max-width: $break-large) {
     display: none;
   }
