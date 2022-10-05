@@ -3,7 +3,7 @@ title: Image upload
 status: project
 appearence: 15
 code: React, ml5.js
-url: https://ml5imageclassifier.netlify.com/
+url: http://titan.dcs.bbk.ac.uk/~jkette01/w1fma/
 thumb: cycle.jpeg
 main: pompidou.jpeg
 ---
