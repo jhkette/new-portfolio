@@ -3,7 +3,7 @@ title: CSS gradient tool
 status: project
 appearence: 4
 code: "React"
-url: https://js-array-methods.netlify.app/
+url: https://css-gradient.netlify.app/
 thumb: gradient.png
 main: gradient2.png
 ---
