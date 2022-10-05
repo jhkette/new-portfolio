@@ -2,7 +2,7 @@
 title: Image upload
 status: project
 appearence: 15
-code: React, ml5.js
+code: php, MySQL
 url: http://titan.dcs.bbk.ac.uk/~jkette01/w1fma/
 thumb: cycle.jpeg
 main: pompidou.jpeg
