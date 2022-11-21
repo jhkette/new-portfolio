@@ -2,7 +2,7 @@
 title: CSS gradient tool
 status: project
 appearence: 4
-code: "React"
+code: "Vue"
 url: https://css-gradient.netlify.app/
 thumb: gradient.png
 main: gradient2.png
