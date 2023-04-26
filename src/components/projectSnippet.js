@@ -38,15 +38,12 @@ const ProjectSnippet = ({ post, thumb, title, status }) => {
           className="masonry-item-link"
         >
           <div className="img-wrapper">
-            <p
-              className="maincode"
-              style={{
-                backgroundColor: hover ? styles : "",
-                opacity: hover ? 0.9 : 0,
-              }}
-            >
-              {splitCode(post.frontmatter.code)}
+            <div className="maincode">
+            <p className="view">
+            View<br/> project
             </p>
+            </div>
+
             <Img fluid={thumb} className="image-bloglead" />
           </div>
         </Link>
