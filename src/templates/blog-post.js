@@ -9,7 +9,6 @@ import "../styles/post.scss"
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
- 
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -19,11 +18,19 @@ const BlogPostTemplate = ({ data, location }) => {
       />
       <section className="container-allpost-content" aria role="main">
         <h2> {post.frontmatter.title}</h2>
-        {post.frontmatter.status =="project" ?  <div className="categoriespost"> {post.frontmatter.code}</div> :""}
-        {post.frontmatter.status =="project" ?   <Img
-          fluid={post.frontmatter.main.childImageSharp.fluid}
-          className="image-bloglead"
-        /> :""}
+        {post.frontmatter.status == "project" ? (
+          <div className="categoriespost"> {post.frontmatter.code}</div>
+        ) : (
+          ""
+        )}
+        {post.frontmatter.status == "project" ? (
+          <Img
+            fluid={post.frontmatter.main.childImageSharp.fluid}
+            className="image-bloglead"
+          />
+        ) : (
+          ""
+        )}
 
         <div className="container-arrow-link">
           <Arrow alt="arrow" className="arrow" />

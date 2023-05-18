@@ -2,13 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Seo from "./../components/seo"
+import Seo from "../components/seo"
 import Masonry from "react-masonry-component"
 
-import ProjectSnippet from "./../components/projectSnippet"
-import BlogSnippet from "./../components/BlogSnippet"
+import ProjectSnippet from "../components/projectSnippet"
+import BlogSnippet from "../components/BlogSnippet"
 
-const BlogIndex = ({ data, location}) => {
+const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.projects.nodes
   const postsOther = data.posts.nodes
@@ -24,7 +24,7 @@ const BlogIndex = ({ data, location}) => {
     return <BlogSnippet post={post} title={title} />
   })
 
-  if(!items){
+  if (!items) {
     return <p>Loading....</p>
   }
 
@@ -40,7 +40,7 @@ const BlogIndex = ({ data, location}) => {
         className="container-projects-posts"
         columnClassName="my-masonry-grid_column"
       >
-        { items}
+        {items}
       </Masonry>
       <section className="container-section-post index" aria>
         <h2>Posts</h2>

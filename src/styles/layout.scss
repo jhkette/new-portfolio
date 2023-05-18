@@ -172,7 +172,7 @@ body {
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.4;
-  background-color: $lightgrey;
+
 }
 ////////////////////// * Typography styles * //////////////////////
 
@@ -343,7 +343,6 @@ footer {
 .maincontent {
   display: flex;
   flex-direction: row;
-  background-color: $lightgrey;
   justify-content: space-around;
   overflow: hidden;
   position: relative;
@@ -359,7 +358,7 @@ footer {
  flex: 1;
   margin: 2rem auto 0 auto;
   padding: 0 2rem;
-  border: 1px red;
+
   position: relative;
 
   @media screen and (max-width: $break-tablet) {

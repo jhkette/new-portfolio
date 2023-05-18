@@ -39,9 +39,10 @@ const ProjectSnippet = ({ post, thumb, title, status }) => {
         >
           <div className="img-wrapper">
             <div className="maincode">
-            <p className="view">
-            View<br/> project
-            </p>
+              <p className="view">
+                View
+                <br /> project
+              </p>
             </div>
 
             <Img fluid={thumb} className="image-bloglead" />

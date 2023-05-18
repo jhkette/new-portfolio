@@ -13,6 +13,6 @@ const drawerToggleButton = props => {
       <span />
       <span />
     </div>
-  )
-}
-export default drawerToggleButton
+  );
+};
+export default drawerToggleButton;

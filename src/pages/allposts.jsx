@@ -1,15 +1,13 @@
 import React from "react"
-import {  graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Masonry from "react-masonry-component"
 import BlogSnippet from "../components/BlogSnippet"
 
 const BlogIndex = ({ data, location }) => {
- 
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-
 
   const items = posts.map(post => {
     const title = post.frontmatter.title || post.fields.slug

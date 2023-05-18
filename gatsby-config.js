@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: `Joseph Ketterer`,
-
   },
   plugins: [
     `gatsby-plugin-image`,

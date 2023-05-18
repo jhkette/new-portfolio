@@ -8,7 +8,7 @@ thumb: wordle.webp
 main: words.jpg
 ---
 
-This is a wordle clone made in React. All the features of the wordle game are present. 
+This is a wordle clone made in React. All the features of the wordle game are present.
 
 - Guessed letters in the correct position of the correct word are marked green.
 - Letters that are present in the correct word but not in the correct place are marked yellow.
