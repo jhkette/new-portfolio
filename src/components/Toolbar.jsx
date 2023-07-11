@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import DrawerToggleButton from "./DrawerToggle.js"
+import DrawerToggleButton from "./DrawerToggle"
 import { Link } from "gatsby"
 import Github from "../../images/github.svg"
 import Codepen from "../../images/codepen.svg"

@@ -2,8 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import "./../styles/SideDrawer.scss"
 
-const SideDrawer = props => {
+function SideDrawer(props) {
   let drawerClasses = "sidedrawer"
+  // eslint-disable-next-line react/prop-types
   if (props.show.sideDrawerOpen) {
     drawerClasses = "sidedrawer open"
   }
@@ -36,4 +37,4 @@ const SideDrawer = props => {
   )
 }
 
-export default SideDrawer
+export default SideDrawer;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import Toolbar from "./Toolbar"
-import SideDrawer from "./SideDrawer.js"
+import SideDrawer from "./SideDrawer.jsx"
 import "./../styles/layout.scss"
 
 const Layout = ({ location, title, children }) => {

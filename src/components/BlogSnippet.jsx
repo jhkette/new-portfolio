@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Link } from "gatsby"
-const BlogSnippet = ({ post, title }) => {
+function BlogSnippet({ post, title }) {
   return (
     <article key={post.fields.slug} className="container-singlepost">
       <Link to={`${post.fields.slug}`} style={{ textDecoration: "none" }}>
@@ -12,4 +12,4 @@ const BlogSnippet = ({ post, title }) => {
   )
 }
 
-export default BlogSnippet
+export default BlogSnippet;
