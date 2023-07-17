@@ -5,6 +5,8 @@ import Github from "../../images/github.svg"
 import Codepen from "../../images/codepen.svg"
 import Arrow from "../../images/right-arrow-1.svg"
 import "./../styles/Toolbar.scss"
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const activeStyle = {
   color: "#008489",
@@ -38,26 +40,41 @@ const Toolbar = props => {
         <nav className="toolbar_navigation-items" aria role="navigation">
           <ul>
             <li>
-              <img src={Arrow} alt="arrow" />
+            <FontAwesomeIcon
+					icon={faArrowRight}
+			
+				
+				/>
+             
               <Link to="/" activeStyle={activeStyle}>
                 Home
               </Link>
             </li>
 
             <li>
-              <img src={Arrow} alt="arrow" />
+            <FontAwesomeIcon
+					icon={faArrowRight}
+			
+				
+				/>
               <Link to="/about-me/" activeStyle={activeStyle}>
                 About
               </Link>
             </li>
             <li>
-              <img src={Arrow} alt="arrow" />
+            <FontAwesomeIcon
+					icon={faArrowRight}
+			
+				
+				/>
               <Link to="/posts" activeStyle={activeStyle}>
                 All projects
               </Link>
             </li>
             <li>
-              <img src={Arrow} alt="arrow" />
+            <FontAwesomeIcon
+					icon={faArrowRight}
+				/>
               <Link to="/allposts" activeStyle={activeStyle}>
                 All posts
               </Link>
