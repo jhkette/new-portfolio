@@ -8,7 +8,7 @@ thumb: open-water-swim-2696689_1920.jpg
 main: trail-riding-crop.jpg
 ---
 
-This is a WordPress site made for my locally cycling club as part of my BirkBeck degree. 
+This is a WordPress site made for my locally cycling club as part of my Birkbeck degree. 
 
 I made a WordPress theme to create a customised look and feel for the site. I made the theme in such a way to ensure the site was as editable as possible.
 
