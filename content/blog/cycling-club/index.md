@@ -12,6 +12,6 @@ This is a WordPress site made for my locally cycling club as part of my Birkbeck
 
 I made a WordPress theme to create a customised look and feel for the site. I made the theme in such a way to ensure the site was as editable as possible.
 
-I also made a Google Calender plugin and several Gutenberg block plugins. The Google Calender plugin fetches data and displays events from a Google Calender. The Gutenberg Block plugins allow a logged in user to add custom design features via a CMS. These are created by installing the block editor library into a plugin file and then building the block by modifying an edit and save file. The block editor library is based on an adaption of React - a JavaScript library. 
+I also made a Google Calender plugin and several Gutenberg block WordPress plugins. The Google Calender plugin fetches data and displays events from a Google Calender on the home page. The Gutenberg Block plugins allow a logged in user to add custom design features via a CMS. These are created by installing the block editor library into a plugin file and then building the block by modifying an edit and save file. The block editor library is based on an adaption of React - a JavaScript library. 
 
 I initially created a HTML/CSS [demo](https://titan.dcs.bbk.ac.uk/~jkette01/wswstatic/) and used Vitest to test it. Finally, I used [Cypress](https://www.cypress.io/) to test the final website. 
