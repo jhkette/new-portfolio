@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Code from "./../images/code.svg"
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ProjectSnippet = ({ post, thumb, title, status }) => {
   const [hover, setHover] = useState(false)
@@ -39,10 +41,9 @@ const ProjectSnippet = ({ post, thumb, title, status }) => {
         >
           <div className="img-wrapper">
             <div className="maincode">
-              <p className="view">
-                View
-                <br /> project
-              </p>
+           
+              <FontAwesomeIcon icon={faMagnifyingGlass} className="glass"/>
+              
             </div>
 
             <Img fluid={thumb} className="image-bloglead" />
