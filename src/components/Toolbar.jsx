@@ -42,26 +42,26 @@ const Toolbar = props => {
             <li>
               <FontAwesomeIcon icon={faArrowRight} />
 
-              <Link to="/" activeStyle={activeStyle}>
+              <Link to="/" activeStyle={activeStyle} className="link-highlight">
                 Home
               </Link>
             </li>
 
             <li>
               <FontAwesomeIcon icon={faArrowRight} />
-              <Link to="/about-me/" activeStyle={activeStyle}>
+              <Link to="/about-me/" activeStyle={activeStyle} className="link-highlight">
                 About
               </Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faArrowRight} />
-              <Link to="/posts" activeStyle={activeStyle}>
+              <Link to="/posts" activeStyle={activeStyle} className="link-highlight">
                 All projects
               </Link>
             </li>
             <li>
               <FontAwesomeIcon icon={faArrowRight} />
-              <Link to="/allposts" activeStyle={activeStyle}>
+              <Link to="/allposts" activeStyle={activeStyle} className="link-highlight">
                 All posts
               </Link>
             </li>
