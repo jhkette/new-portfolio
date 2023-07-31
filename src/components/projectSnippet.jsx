@@ -6,21 +6,6 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ProjectSnippet = ({ post, thumb, title, status }) => {
-  const [hover, setHover] = useState(false)
-
-  const toggleHover = () => {
-    setHover(true)
-  }
-
-  const turnHoverOff = () => {
-    setHover(false)
-  }
-
-  const splitCode = code => {
-    const mainCode = code.split(",")
-    return mainCode[0]
-  }
-
   const styles = "#008489"
 
   return (
@@ -31,19 +16,10 @@ const ProjectSnippet = ({ post, thumb, title, status }) => {
       itemType="http://schema.org/Article"
     >
       <header className="blog-header">
-        <Link
-          to={post.fields.slug}
-          onMouseOut={turnHoverOff}
-          onMouseEnter={toggleHover}
-          onFocus={toggleHover}
-          onBlur={turnHoverOff}
-          className="masonry-item-link"
-        >
+        <Link to={post.fields.slug} className="masonry-item-link">
           <div className="img-wrapper">
             <div className="maincode">
-           
-              <FontAwesomeIcon icon={faMagnifyingGlass} className="glass"/>
-              
+              <FontAwesomeIcon icon={faMagnifyingGlass} className="glass" />
             </div>
 
             <Img fluid={thumb} className="image-bloglead" />
