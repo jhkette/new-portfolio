@@ -49,7 +49,7 @@ export const pageQuery = graphql`
       filter: { frontmatter: { status: { eq: "project" } } }
     ) {
       nodes {
-        excerpt
+        excerpt(pruneLength: 20)
         fields {
           slug
         }
