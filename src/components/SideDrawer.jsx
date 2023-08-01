@@ -23,7 +23,7 @@ function SideDrawer(props) {
           </Link>
         </li>
         <li>
-          <Link to="/posts" title="All projects">
+          <Link to="/projects" title="All projects">
             All projects
           </Link>
         </li>

@@ -55,7 +55,7 @@ const Toolbar = props => {
             </li>
             <li>
               <FontAwesomeIcon icon={faArrowRight} />
-              <Link to="/posts" activeStyle={activeStyle} className="link-highlight">
+              <Link to="/projects" activeStyle={activeStyle} className="link-highlight">
                 All projects
               </Link>
             </li>
