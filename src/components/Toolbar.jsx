@@ -23,8 +23,9 @@ const Toolbar = props => {
             </h1>
           </div>
           <p className="text-introduction">
-            I am a junior web developer with experience with HTML, CSS,
-            Javascript, React, PHP, Python and MySQL.
+          I am a junior web developer with experience with HTML, CSS,
+          Javascript, PHP, Java and Python. I also have a good knowledge of 
+          numerous popular frameworks and libraries. 
           </p>
           <div className="underline"></div>
           <nav className="toolbar__toggle-button">
