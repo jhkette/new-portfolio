@@ -13,7 +13,8 @@ export default function about() {
         <h2>About</h2>
         <p>
           I am a junior web developer with experience with HTML, CSS,
-          Javascript, React, PHP, Python and MySQL.
+          Javascript, PHP, Java and Python. I also have a good knowledge of 
+          numerous popular frameworks and libraries. 
         </p>
       </div>
     </Layout>
