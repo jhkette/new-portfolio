@@ -3,7 +3,7 @@ title: Emblem Books
 status: project
 appearence: 17
 code: HTML,CSS
-url: https://emblem-books.netlify.com/
+url: https://emblem-books.netlify.app/
 thumb: oldbooks.jpeg
 main: vintage.jpeg
 ---
