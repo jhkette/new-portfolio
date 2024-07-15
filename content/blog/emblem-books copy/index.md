@@ -3,7 +3,7 @@ title: Bootworld
 status: project
 appearence: 17
 code: HTML,CSS
-url: https://bootworld.netlify.com/
+url: https://bootworld.netlify.app/
 thumb: boots.png
 main: boots-large-1.png
 ---

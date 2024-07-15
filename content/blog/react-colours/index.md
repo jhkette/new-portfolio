@@ -3,7 +3,7 @@ title: Colour picker
 status: project
 appearence: 12
 code: React
-url: https://happy-mayer-e2ee1d.netlify.com/
+url: https://happy-mayer-e2ee1d.netlify.app/
 thumb: colours.jpg
 main: planks.jpg
 ---
