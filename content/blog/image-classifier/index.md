@@ -3,7 +3,7 @@ title: Image classifier
 status: project
 appearence: 16
 code: React
-url: https://ml5imageclassifier.netlify.com/
+url: https://ml5imageclassifier.netlify.app/
 thumb: cat.webp
 main: robin2.jpeg
 ---
