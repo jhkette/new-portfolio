@@ -1,14 +1,14 @@
 ---
 title: Image upload
 status: project
-appearence: 15
+appearence: 10
 code: php, MySQL
 url: http://titan.dcs.bbk.ac.uk/~jkette01/w1fma/
 thumb: cycle.jpeg
 main: pompidou.jpeg
 ---
 
-This photo gallery application was part of my work at Birkbeck. The application was made using PHP and MySQL and written in an OOP style.
+This photo gallery application was part of my work at Birkbeck. The application was made using PHP with a MySQL database written in an OOP style.
 
 I’ve made sure to consider the security implications of allowing users to upload files. I carefully checked the extension and mime type and checked other variables to ensure the user uploads a valid image. I also use prepared statements and parameterized queries to protect against any form of SQL injection.
 
