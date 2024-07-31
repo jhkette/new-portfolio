@@ -22,7 +22,7 @@ const Layout = ({ location, title, children }) => {
         />
         <main className="container-bodycontent">{children}</main>
       </div>
-      <footer></footer>
+    
     </div>
   )
 }
