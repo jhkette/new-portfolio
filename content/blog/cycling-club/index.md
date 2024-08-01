@@ -1,7 +1,7 @@
 ---
 title: Cycling Club website
 status: project
-appearence: 0
+appearence: 7
 code: "WordPress"
 url: https://titan.dcs.bbk.ac.uk/~jkette01/wswdemo/
 thumb: open-water-swim-2696689_1920.jpg
