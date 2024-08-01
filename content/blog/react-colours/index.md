@@ -1,7 +1,7 @@
 ---
 title: Colour picker
 status: project
-appearence: 12
+appearence: 2
 code: React
 url: https://happy-mayer-e2ee1d.netlify.app/
 thumb: colours.jpg
